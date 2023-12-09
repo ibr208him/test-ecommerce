@@ -21,7 +21,7 @@ let getCartContent=async()=>{
 
 useEffect(()=>{
   getCartContent();
-},[cartCount,userTokenContext])
+},[getCartContext()])
   
   const logout = () => {
     localStorage.removeItem("userToken");
